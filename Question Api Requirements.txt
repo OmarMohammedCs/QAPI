@@ -1,0 +1,66 @@
+# NestJS-Based Question Application Requirements
+
+## 1. Introduction
+The **NestQ API** is a system for managing questions and answers that can be used to create quizzes, educational platforms, or interactive question-based systems. It leverages **NestJS** to provide a fast and scalable API.
+
+---
+## 2. Functional Requirements
+### 2.1 User Management
+- Register a new user (name, email, password).
+- Login and logout.
+- Session management using JWT.
+- Assign user roles (Student, Teacher, Admin).
+
+### 2.2 Question Management
+- Add new questions with options and the correct answer.
+- Edit and delete questions.
+- Support for different question types (multiple choice, true/false, text input).
+
+### 2.3 Quiz Management
+- Create quizzes containing a set of questions.
+- Define quiz duration and the number of attempts allowed.
+- Send quiz results to the user upon completion.
+
+### 2.4 Evaluation & Reports
+- Calculate user scores after each quiz.
+- Display performance and progress reports for users.
+- Send notifications about levels or new results.
+
+---
+## 3. Non-Functional Requirements
+### 3.1 Performance
+- Fast response time with minimal latency.
+- Support for a large number of concurrent users.
+
+### 3.2 Security
+- Encrypt passwords using **bcrypt**.
+- Use **JWT** for user authentication.
+- Protect API from common attacks (e.g., **SQL Injection**, **XSS**).
+
+### 3.3 Scalability
+- Support **MongoDB** or **PostgreSQL** as the database.
+- Enable service deployment on **Docker** or **Kubernetes**.
+
+### 3.4 Documentation
+- Provide **Swagger** for API documentation.
+- Support a RESTful API with clear and user-friendly standards.
+
+---
+## 4. Technologies Used
+- **Backend:** NestJS (TypeScript)
+- **Database:** MongoDB / PostgreSQL
+- **Authentication:** JWT + bcrypt
+- **API Documentation:** Swagger
+- **Deployment:** Docker / Kubernetes
+
+---
+## 5. System Outputs
+- API providing endpoints for managing users, questions, and quizzes.
+- Secure authentication system with role-based access control.
+- Ability to create and manage quizzes easily.
+- Reports on user performance and quiz results.
+
+---
+## 6. Additional Notes
+- The system can be expanded in the future to support features like **AI-generated questions** or **integration with educational platforms**.
+
